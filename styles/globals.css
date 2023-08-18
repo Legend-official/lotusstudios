@@ -1,9 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Qanelas, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -13,4 +17,61 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/* FONTs */
+@font-face {
+  font-family: "Qanelas";
+  src: url(../fonts/Qanelas-Regular.otf);
+}
+@font-face {
+  font-family: "QanelasBold";
+  src: url(../fonts/Qanelas-Bold.otf);
+}
+@font-face {
+  font-family: "QanelasSemiBold";
+  src: url(../fonts/Qanelas-SemiBold.otf);
+}
+@font-face {
+  font-family: "QanelasExtraBold";
+  src: url(../fonts/Qanelas-ExtraBold.otf);
+}
+@font-face {
+  font-family: "Peachi";
+  src: url(../fonts/peachi-regular.otf);
+}
+@font-face {
+  font-family: "PeachiMedium";
+  src: url(../fonts/peachi-medium.otf);
+}
+@font-face {
+  font-family: "PeachiBold";
+  src: url(../fonts/peachi-bold.otf);
+}
+
+/* Normal CSS */
+.QanelasExtraBold {
+  font-family: "QanelasExtraBold";
+}
+.QanelasBold {
+  font-family: "QanelasBold";
+}
+.QanelasSemiBold {
+  font-family: "QanelasSemiBold";
+}
+.Peachi {
+  font-family: "Peachi";
+}
+.PeachiMedium {
+  font-family: "PeachiMedium";
+}
+.PeachiBold {
+  font-family: "PeachiBold";
+}
+.width_moniter {
+  max-width: 1366px;
+  width: 100%;
+}
+.purple_text_shadow {
+  text-shadow: 0px 0px 10px #af5ffe;
 }
