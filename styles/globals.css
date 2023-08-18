@@ -75,3 +75,6 @@ a {
 .purple_text_shadow {
   text-shadow: 0px 0px 10px #af5ffe;
 }
+.remove-white-bg {
+  mix-blend-mode: multiply;
+}

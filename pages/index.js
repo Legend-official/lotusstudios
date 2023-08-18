@@ -4,6 +4,7 @@ import Header from "../components/header/Header";
 import Banners from "../components/comps/Banners";
 import Hero from "../components/page/Hero";
 import WhyChooseUs from "../components/page/WhyChooseUs";
+import BoostSales from "../components/page/BoostSales";
 
 export default function Home() {
   return (
@@ -19,6 +20,9 @@ export default function Home() {
       </div>
       <div className="width_moniter">
         <WhyChooseUs />
+      </div>
+      <div className="width_moniter">
+        <BoostSales />
       </div>
     </div>
   );

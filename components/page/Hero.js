@@ -42,7 +42,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="w-1/2 hidden lg:flex">
+      <div className="w-1/2 hidden lg:block">
         <div className="flex justify-center relative">
           <Image
             className="relative bottom-[-70px] scale-[1.5]"
