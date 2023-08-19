@@ -2,11 +2,12 @@ import Image from "next/image";
 import React from "react";
 import BgClipart from "../comps/BgClipart";
 import Button from "../comps/Button";
+import Link from "next/link";
 
 const headerOption = [
-  { title: "Pricing", href: "/" },
-  { title: "Portfolio", href: "/" },
-  { title: "Contact", href: "/" },
+  { title: "Pricing", href: "#boostsales" },
+  { title: "Portfolio", href: "#portfolio" },
+  { title: "Contact", href: "#contact" },
 ];
 
 const Header = () => {
@@ -18,26 +19,30 @@ const Header = () => {
       <div className="flex flex-row items-center gap-4 text-sm">
         {headerOption?.map((item, index) => (
           <div key={index}>
-            <div className="hover:text-gray-400 duration-200 cursor-pointer tracking-wider font-semibold">
-              {item?.title}
-            </div>
+            <Link href={item?.href}>
+              <div className="hover:text-gray-400 duration-200 cursor-pointer tracking-wider font-semibold">
+                {item?.title}
+              </div>
+            </Link>
           </div>
         ))}
       </div>
       <div>
-        <div className="select-none flex flex-row gap-2 items-center bg-[#af5ffe] duration-200 hover:bg-[#ae5ffec0] rounded-md py-3 sm:py-4 w-[140px] sm:w-[170px] justify-center text-sm font-semibold tracking-wide cursor-pointer">
-          <div className="h-5 w-5">
-            <Image
-              width={100}
-              height={100}
-              unoptimized="true"
-              alt="discord logo"
-              src={"/svgs/discord.svg"}
-              draggable="false"
-            />
+        <Link href="https://discord.gg/lotusgfx">
+          <div className="select-none flex flex-row gap-2 items-center bg-[#af5ffe] duration-200 hover:bg-[#ae5ffec0] rounded-md py-3 sm:py-4 w-[140px] sm:w-[170px] justify-center text-sm font-semibold tracking-wide cursor-pointer">
+            <div className="h-5 w-5">
+              <Image
+                width={100}
+                height={100}
+                unoptimized="true"
+                alt="discord logo"
+                src={"/svgs/discord.svg"}
+                draggable="false"
+              />
+            </div>
+            <div className="sm:text-[15px] text-xs">lotus.design</div>
           </div>
-          <div className="sm:text-[15px] text-xs">lotus.design</div>
-        </div>
+        </Link>
       </div>
     </div>
   );

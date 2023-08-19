@@ -3,6 +3,7 @@ import BgClipart from "../comps/BgClipart";
 import TextWithLinesBelow from "../comps/TextWithLinesBelow";
 import Button from "../comps/Button";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -26,20 +27,24 @@ const Hero = () => {
           of products
         </div>
         <div className="mt-14 flex flex-col sm:flex-row  gap-4 items-center">
-          <Button text="Get Started" imageLink={"/svgs/paintbrush.svg"} />
-          <div className="select-none flex flex-row gap-2 items-center bg-[#0d0d11] duration-200 hover:bg-[#22222c8e] rounded-md py-4 w-[170px] justify-center text-sm font-semibold tracking-wide cursor-pointer">
-            <div className="text-[#696a6e]">Learn more below</div>
-            <div className="h-5 w-5">
-              <Image
-                width={100}
-                height={100}
-                unoptimized="true"
-                alt="discord logo"
-                src={"/svgs/arrowbottom.svg"}
-                draggable="false"
-              />
+          <Link href="https://discord.gg/lotusgfx">
+            <Button text="Get Started" imageLink={"/svgs/paintbrush.svg"} />
+          </Link>
+          <Link href="#boostsales">
+            <div className="select-none flex flex-row gap-2 items-center bg-[#0d0d11] duration-200 hover:bg-[#22222c8e] rounded-md py-4 w-[170px] justify-center text-sm font-semibold tracking-wide cursor-pointer">
+              <div className="text-[#696a6e]">Learn more below</div>
+              <div className="h-5 w-5">
+                <Image
+                  width={100}
+                  height={100}
+                  unoptimized="true"
+                  alt="discord logo"
+                  src={"/svgs/arrowbottom.svg"}
+                  draggable="false"
+                />
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
       <div className="w-1/2 hidden lg:block">

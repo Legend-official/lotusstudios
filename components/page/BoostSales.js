@@ -15,7 +15,7 @@ const BoostSalesCard = [
     ],
   },
   {
-    image: "/kodithumb.png",
+    image: "/bannersthumb.png",
     title: "Advertisement Signatures",
     hot: false,
     price: "$29.99+",
@@ -26,7 +26,7 @@ const BoostSalesCard = [
     ],
   },
   {
-    image: "/kodithumb.png",
+    image: "/userbarthumb.png",
     title: "Graphics Of All Sorts",
     hot: false,
     price: "$11.99+",
@@ -40,7 +40,7 @@ const BoostSalesCard = [
 
 const BoostSales = () => {
   return (
-    <div className="py-10 w-full flex flex-col items-center">
+    <div id="boostsales" className="py-10 w-full flex flex-col items-center">
       <div className="flex flex-col items-center">
         <div className="text-[#af5ffe] w-fit select-none QanelasBold text-sm px-3 py-1 bg-[#ae5ffe28] rounded-full border-[1px] border-[#af5ffe]">
           #Premium Thread Designs
@@ -57,7 +57,7 @@ const BoostSales = () => {
         </div>
       </div>
       {/* three boxes */}
-      <div className="grid grid-flow-row  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 py-10 mt-10 w-full px-14 gap-20">
+      <div className="grid grid-flow-row  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-10 mt-10 w-full px-14 gap-20">
         {
           // map through the array
           BoostSalesCard?.map((card, index) => (
