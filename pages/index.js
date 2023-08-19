@@ -16,6 +16,7 @@ export default function Home() {
         <meta property="og:type" content="article"></meta>
         <meta property="og:image:type" content="image/png"></meta>
         <meta property="og:image" content={"/logo.png"}></meta>
+        <meta name="title" content={`Lotus Studios | GFX Services`}></meta>
         <meta name="twitter:image" content={"/logo.png"}></meta>
         <meta name="theme-color" content="#af5ffe" />
         <meta
