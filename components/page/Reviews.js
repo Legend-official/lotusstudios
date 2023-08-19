@@ -1,6 +1,7 @@
 import React from "react";
 import TextWithLinesBelow from "../comps/TextWithLinesBelow";
 import Image from "next/image";
+import Link from "next/link";
 
 const ReviewsCards = [
   {
@@ -59,7 +60,7 @@ const Reviews = () => {
         </div>
         {/* a description */}
         <div className="mt-14 text-[#ffffff6e] text-sm md:text-base lg:text-lg mx-auto text-center">
-          See What my customers honestly say about me and my work, time taken
+          See what my customers honestly say about me and my work, time taken
           and communication
         </div>
       </div>
@@ -68,9 +69,10 @@ const Reviews = () => {
         {
           // map through the array of objects
           ReviewsCards.map((card, index) => (
-            <div
+            <Link
+              href={`https://t.me/LotusOrders`}
               key={index}
-              className="relative cursor-default hover:scale-110 duration-200"
+              className="relative hover:scale-110 duration-200"
             >
               {/* a backshadow */}
               <div className="h-full w-full bg-[#af5ffe] absolute top-0 left-0 z-[0] blur-[20px] opacity-30"></div>
@@ -79,12 +81,9 @@ const Reviews = () => {
                   <div>{card?.name}</div>
                   <div>{`${card.emoji}${card.emoji}${card.emoji}${card.emoji}${card.emoji}`}</div>
                 </div>
-                <div className="text-[#ffffff6e] text-sm">
-                  See What my customers honestly say about me and my work, time
-                  taken and communication
-                </div>
+                <div className="text-[#ffffff6e] text-sm">{card?.review}</div>
               </div>
-            </div>
+            </Link>
           ))
         }
       </div>

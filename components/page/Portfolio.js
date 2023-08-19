@@ -20,7 +20,7 @@ const boxContent = [
     title: "Upgrade Thread",
     desc: [
       "For my client MMaritsa",
-      "6-7 Revisions given",
+      "6 to 7 Revisions given",
       "Source File given on sale",
     ],
   },
@@ -46,7 +46,10 @@ const boxContent = [
 
 const Portfolio = () => {
   return (
-    <div id="portfolio" className="w-full bg-[#16161c] relative z-10 rounded-md py-20 px-14 ">
+    <div
+      id="portfolio"
+      className="w-full bg-[#16161c] relative z-10 rounded-md py-20 px-14 "
+    >
       {/* text with icon links */}
       <div className="w-full flex flex-col justify-center lg:flex-row ">
         <div className="lg:w-1/2 py-10 justify-center flex flex-col items-center lg:items-start">
@@ -75,7 +78,7 @@ const Portfolio = () => {
             </Link>
           </div>
         </div>
-        <div className="lg:w-1/2 mt-5 md:mt-0 px-4 md:px-0 relative flex items-center justify-center">
+        <div className="lg:w-1/2 mt-5 md:mt-0 sm:px-4 md:px-0 relative flex items-center justify-center">
           {/* dark purple shadow on background of boxes */}
           <div className="absolute w-[90%] h-[90%] bg-[#af5ffe] rounded-md z-[-1] blur-[50px] opacity-50"></div>
           <div className="grid grid-flow-row sm:grid-cols-2 gap-6 gap-x-16 h-full">
@@ -106,7 +109,7 @@ const Portfolio = () => {
                         key={index + index}
                         className="mx-auto w-fit Peachi text-[#ffffff6e] text-sm"
                       >
-                        {item}
+                        {`${item}`}
                       </div>
                     ))}
                   </div>

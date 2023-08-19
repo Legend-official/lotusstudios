@@ -16,7 +16,7 @@ const Header = () => {
       <div className="hidden sm:block">
         <BgClipart link={"/3d_bust_omg_lol.png"} />
       </div>
-      <div className="flex flex-row items-center gap-4 text-sm">
+      <div className="flex flex-row items-center gap-2 sm:gap-4 text-xs sm:text-sm">
         {headerOption?.map((item, index) => (
           <div key={index}>
             <Link href={item?.href}>
