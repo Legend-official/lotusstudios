@@ -17,6 +17,7 @@ export default function Home() {
         <meta property="og:image:type" content="image/png"></meta>
         <meta property="og:image" content={"/logo.png"}></meta>
         <meta name="twitter:image" content={"/logo.png"}></meta>
+        <meta name="theme-color" content="#af5ffe" />
         <meta
           property="og:description"
           content="Platinum-standard thread designs for a range of products and services!"
